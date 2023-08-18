@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center mt-4 mb-4">Welcome to Bap-er-bank</h1>
+    <section class="grid grid-cols-3 gap-3 w-9/12 mx-auto">
+        <div class="bg-blue-400 text-white text-3xl p-10 rounded-lg ">
+            <h1 class="text-3xl ">Deposit</h1>
+            <p>$<span id="deposti-total">00</span> </p>
+        </div>
+        <div class="bg-orange-400 text-white text-3xl p-10 rounded-lg  ">
+            <h1>Withdraw</h1>
+            <p>$<span id="withdraw-total">00</span> </p>
+        </div>
+        <div class="bg-green-400 text-white text-3xl p-10 rounded-lg  ">
+            <h1>Balnce</h1>
+            <p>$<span id="Balance-total">1200</span> </p>
+        </div>
+    </section>
+    <section class="grid grid-cols-2 mt-4 gap-3 w-9/12 mx-auto">
+        <div class="bg-violet-800 rounded-lg p-10">
+            <h3 class="text-4xl text-white mb-4 ">Deposit</h3>
+            <input id="deposit-fild" type="text" class="  w-9/12 mb-2" placeholder="$ Enter you amount for deposit">
+            <button id="btn-deposit" class="bg-blue-400 py-2 px-8 text-white rounded-lg">Deposit</button>
+        </div>
+        <div class="bg-violet-800 rounded-lg p-10">
+            <h3 class="text-4xl text-white mb-4 ">Withdraw</h3>
+            <input id="withdraw-fild" type="text" class="   w-9/12 mb-2" placeholder="$ Enter you amount for Withdraw">
+            <button id="btn-withdraw" class="bg-blue-400 py-2 px-8 text-white rounded-lg hover:bg-blue-100">Withdraw</button>
+        </div>
+    </section>
+    <script src="js/utlity.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+    
+</body>
+</html>
